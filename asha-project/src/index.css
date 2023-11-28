@@ -7,10 +7,17 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  background: linear-gradient(120deg, #242424, #ffffff, #0000);
+  background-size: 200% 200%;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
 }
 
 a {
@@ -65,4 +72,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+@-webkit-keyframes Animation {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
 }
